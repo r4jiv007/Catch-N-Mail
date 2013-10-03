@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="1">
+    
+<TextView 
+    android:text="Selected Emails:-"
+    android:textSize="20dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#FFFFFF"
+    android:background="#000000"/>
+
+<TextView 
+    android:text="select to remove"
+    android:textSize="15dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#FFFFFF"
+    android:background="#000000"/>
+<ListView 
+    
+    android:layout_width="fill_parent"
+    android:layout_height="0dip"
+    android:id ="@+id/tosendlist"
+   	android:layout_weight="1"	
+    android:paddingBottom="10dp"
+    ></ListView>
+
+<LinearLayout
+    style="@android:style/ButtonBar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2" 
+  >
+
+    <Button
+        android:id="@+id/remove"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="Remove" />
+
+    <Button
+        android:id="@+id/nxt2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="Next" />
+</LinearLayout>
+
+</LinearLayout>

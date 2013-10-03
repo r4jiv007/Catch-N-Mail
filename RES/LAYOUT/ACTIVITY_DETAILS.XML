@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+  
+   <TextView 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Subject:-"
+       android:id="@+id/lsub"
+       android:textSize="20dp"
+       android:gravity="center_vertical"
+       />
+   <EditText 
+       android:id="@+id/sub"
+       android:hint="Type Your Subject"
+       android:layout_height="50dp"
+       android:layout_width="fill_parent"
+       android:gravity="left"
+       android:inputType="textCapWords"
+       />
+
+   <TextView
+       android:id="@+id/msub"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:text="Body:-"
+       android:textSize="20dp" />
+
+   <EditText 
+       android:id="@+id/msg"
+       android:hint="Type Your Mail Body"
+       android:layout_height="145dp"
+       android:layout_width="fill_parent"
+       android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+       android:gravity="top|left"/>
+   
+   
+     
+    <TextView
+       android:id="@+id/msub"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:text="Enter id:-"
+       android:textSize="20dp" />
+    <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:weightSum="1" >
+
+      		<AutoCompleteTextView 
+      		 	android:id="@+id/eids"
+				android:layout_height="50dp"
+       		 	android:layout_width="0dp"
+      		 	android:inputType="textEmailAddress"
+      		 	android:textColorHint="#000000"
+      			android:gravity="top|left"
+      		 	android:layout_weight=".8"
+      		 />
+  		 	<Button
+         		 android:id="@+id/add"
+          		 android:layout_width="0dp"
+          		 android:layout_height="50dp"
+          		 android:layout_weight=".2"
+         		 android:text="Add" 
+         		 
+         		/>
+       </LinearLayout>
+     
+    
+
+     
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:orientation="vertical"
+         >
+        
+        <Button 
+       		android:id="@+id/selcnt"
+       		android:text="Select Email_ids From Contacs"
+       		android:layout_width="fill_parent"
+       		android:layout_height="50dp"
+       
+       	/>
+        <LinearLayout 
+            
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            style="@android:style/ButtonBar"
+            >
+        	<Button
+          		android:id="@+id/clear"
+          		android:layout_width="fill_parent"
+          		android:layout_height="50dp"
+          		android:layout_weight="1"
+          		android:text="Clear All" />
+             <Button
+          		android:id="@+id/nxt"
+          		android:layout_width="fill_parent"
+          		android:layout_height="50dp"
+          		android:text="Next"
+          		android:layout_weight="1" />
+          </LinearLayout>
+        
+         
+     </LinearLayout>
+     	      
+
+</LinearLayout>

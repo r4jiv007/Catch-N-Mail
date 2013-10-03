@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="1">
+    
+
+
+<GridView 
+    android:numColumns="3"
+    android:layout_width="fill_parent"
+    android:layout_height="0dip"
+    android:id ="@+id/grid"
+   	android:layout_weight="1"	
+    android:paddingBottom="10dp"
+    ></GridView>
+
+<LinearLayout
+    style="@android:style/ButtonBar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2" 
+  >
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/cth"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="Catch" />
+</LinearLayout>
+
+</LinearLayout>
